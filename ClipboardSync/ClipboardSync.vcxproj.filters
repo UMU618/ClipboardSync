@@ -1,146 +1,153 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
+    <Filter Include="third_party">
+      <UniqueIdentifier>{e14c5569-57eb-41ba-88b8-39754f63c1bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\FreeRDP">
+      <UniqueIdentifier>{91f5f809-29e3-458f-84f5-beff70c32fd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\FreeRDP\client">
+      <UniqueIdentifier>{c0bb853e-7d78-4862-967a-ffc5c146777e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="third_party\FreeRDP\client\Windows">
+      <UniqueIdentifier>{7dad790b-ab9f-412b-8b41-df4ae9570e18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClipboardSync">
+      <UniqueIdentifier>{301ca04f-850e-4806-84fc-aa0ceea5945d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClipboardSync\pb">
+      <UniqueIdentifier>{dcf415de-3662-41fb-b97c-fd54106d0d35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClipboardSync\src">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    <Filter Include="ClipboardSync\src\client">
+      <UniqueIdentifier>{73df69d7-e06b-4441-af54-2781ea876591}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Resource Files">
+    <Filter Include="ClipboardSync\src\server">
+      <UniqueIdentifier>{a65026f3-0c18-4081-816b-a12080eb1d36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ClipboardSync\res">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\FreeRDP">
-      <UniqueIdentifier>{7b85e726-d630-4437-8c3b-e1f9c4442b86}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\FreeRDP\client">
-      <UniqueIdentifier>{ca72fc8d-dd44-415d-843d-59d9ce63a881}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\FreeRDP\client\Windows">
-      <UniqueIdentifier>{04c62f76-879d-4446-ac54-374fd0962b8a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\client">
-      <UniqueIdentifier>{1c6388dd-1f13-47e8-ad36-027a8cb8f84d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\server">
-      <UniqueIdentifier>{f1f3e629-1392-4257-8566-001e0a2622a7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Source Files\pb">
-      <UniqueIdentifier>{f169d6d4-3857-4d09-a475-27b4c8401350}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\pb">
-      <UniqueIdentifier>{35e89864-a768-4a1a-9150-14db417d7cb2}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\client">
-      <UniqueIdentifier>{f037d97d-c8d0-49f6-94df-fb140b23d719}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Header Files\server">
-      <UniqueIdentifier>{93076588-6df0-45d9-9be8-dc22ec973d14}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="ClipboardSync.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\..\..\src\umutech\ClipboardSync\pb\clipboard.pb.cc">
+      <Filter>ClipboardSync\pb</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\deps\FreeRDP\client\Windows\wf_cliprdr.c">
-      <Filter>Source Files\FreeRDP\client\Windows</Filter>
+    <ClCompile Include="..\..\..\src\umutech\ClipboardSync\pb\regame_desk.pb.cc">
+      <Filter>ClipboardSync\pb</Filter>
     </ClCompile>
-    <ClCompile Include="io_runner.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\..\..\src\umutech\ClipboardSync\src\client\client_app.cpp">
+      <Filter>ClipboardSync\src\client</Filter>
     </ClCompile>
-    <ClCompile Include="client\client_app.cpp">
-      <Filter>Source Files\client</Filter>
+    <ClCompile Include="..\..\..\src\umutech\ClipboardSync\src\client\client_session.cpp">
+      <Filter>ClipboardSync\src\client</Filter>
     </ClCompile>
-    <ClCompile Include="server\server_app.cpp">
-      <Filter>Source Files\server</Filter>
+    <ClCompile Include="..\..\..\src\umutech\ClipboardSync\src\client\clipboard_client.cpp">
+      <Filter>ClipboardSync\src\client</Filter>
     </ClCompile>
-    <ClCompile Include="server\service.cpp">
-      <Filter>Source Files\server</Filter>
+    <ClCompile Include="..\..\..\src\umutech\ClipboardSync\src\client\root_certificates.cpp">
+      <Filter>ClipboardSync\src\client</Filter>
     </ClCompile>
-    <ClCompile Include="server\session.cpp">
-      <Filter>Source Files\server</Filter>
+    <ClCompile Include="..\..\..\src\umutech\ClipboardSync\src\server\clipboard_service.cpp">
+      <Filter>ClipboardSync\src\server</Filter>
     </ClCompile>
-    <ClCompile Include="client\client_session.cpp">
-      <Filter>Source Files\client</Filter>
+    <ClCompile Include="..\..\..\src\umutech\ClipboardSync\src\server\server_app.cpp">
+      <Filter>ClipboardSync\src\server</Filter>
     </ClCompile>
-    <ClCompile Include="io_runner.ixx">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\..\..\src\umutech\ClipboardSync\src\server\service.cpp">
+      <Filter>ClipboardSync\src\server</Filter>
     </ClCompile>
-    <ClCompile Include="server\clipboard_service.cpp">
-      <Filter>Source Files\server</Filter>
+    <ClCompile Include="..\..\..\src\umutech\ClipboardSync\src\server\session.cpp">
+      <Filter>ClipboardSync\src\server</Filter>
     </ClCompile>
-    <ClCompile Include="clipboard_redirector.ixx">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\..\..\src\umutech\ClipboardSync\src\clipboard_redirector.cpp">
+      <Filter>ClipboardSync\src</Filter>
     </ClCompile>
-    <ClCompile Include="clipboard_redirector.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\..\..\src\umutech\ClipboardSync\src\ClipboardSync.cpp">
+      <Filter>ClipboardSync\src</Filter>
     </ClCompile>
-    <ClCompile Include="client\clipboard_client.cpp">
-      <Filter>Source Files\client</Filter>
+    <ClCompile Include="..\..\..\src\umutech\ClipboardSync\src\utils.cpp">
+      <Filter>ClipboardSync\src</Filter>
     </ClCompile>
-    <ClCompile Include="pb\clipboard.pb.cc">
-      <Filter>Source Files\pb</Filter>
+    <ClCompile Include="..\..\..\src\third_party\FreeRDP\client\Windows\wf_cliprdr.c">
+      <Filter>third_party\FreeRDP\client\Windows</Filter>
     </ClCompile>
-    <ClCompile Include="pb\regame_desk.pb.cc">
-      <Filter>Source Files\pb</Filter>
-    </ClCompile>
-    <ClCompile Include="utils.ixx">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="utils.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\..\..\src\umutech\ClipboardSync\src\io_runner.cpp">
+      <Filter>ClipboardSync\src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="app_log.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\..\..\src\umutech\ClipboardSync\pb\clipboard.pb.h">
+      <Filter>ClipboardSync\pb</Filter>
     </ClInclude>
-    <ClInclude Include="net.hpp">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\..\..\src\umutech\ClipboardSync\pb\regame_desk.pb.h">
+      <Filter>ClipboardSync\pb</Filter>
     </ClInclude>
-    <ClInclude Include="protocol.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="..\..\..\src\umutech\ClipboardSync\src\client\client_app.h">
+      <Filter>ClipboardSync\src\client</Filter>
     </ClInclude>
-    <ClInclude Include="client\client_app.h">
-      <Filter>Header Files\client</Filter>
+    <ClInclude Include="..\..\..\src\umutech\ClipboardSync\src\client\client_session.h">
+      <Filter>ClipboardSync\src\client</Filter>
     </ClInclude>
-    <ClInclude Include="client\client_session.h">
-      <Filter>Header Files\client</Filter>
+    <ClInclude Include="..\..\..\src\umutech\ClipboardSync\src\client\clipboard_client.h">
+      <Filter>ClipboardSync\src\client</Filter>
     </ClInclude>
-    <ClInclude Include="client\clipboard_client.h">
-      <Filter>Header Files\client</Filter>
+    <ClInclude Include="..\..\..\src\umutech\ClipboardSync\src\server\clipboard_service.h">
+      <Filter>ClipboardSync\src\server</Filter>
     </ClInclude>
-    <ClInclude Include="pb\clipboard.pb.h">
-      <Filter>Header Files\pb</Filter>
+    <ClInclude Include="..\..\..\src\umutech\ClipboardSync\src\server\server_app.h">
+      <Filter>ClipboardSync\src\server</Filter>
     </ClInclude>
-    <ClInclude Include="pb\regame_desk.pb.h">
-      <Filter>Header Files\pb</Filter>
+    <ClInclude Include="..\..\..\src\umutech\ClipboardSync\src\server\service.h">
+      <Filter>ClipboardSync\src\server</Filter>
     </ClInclude>
-    <ClInclude Include="server\clipboard_service.h">
-      <Filter>Header Files\server</Filter>
+    <ClInclude Include="..\..\..\src\umutech\ClipboardSync\src\server\session.h">
+      <Filter>ClipboardSync\src\server</Filter>
     </ClInclude>
-    <ClInclude Include="server\server_app.h">
-      <Filter>Header Files\server</Filter>
+    <ClInclude Include="..\..\..\src\umutech\ClipboardSync\src\app_log.h">
+      <Filter>ClipboardSync\src</Filter>
     </ClInclude>
-    <ClInclude Include="server\service.h">
-      <Filter>Header Files\server</Filter>
+    <ClInclude Include="..\..\..\src\umutech\ClipboardSync\src\net.hpp">
+      <Filter>ClipboardSync\src</Filter>
     </ClInclude>
-    <ClInclude Include="server\session.h">
-      <Filter>Header Files\server</Filter>
+    <ClInclude Include="..\..\..\src\umutech\ClipboardSync\src\protocol.h">
+      <Filter>ClipboardSync\src</Filter>
     </ClInclude>
-    <ClInclude Include="server\user_manager.h">
-      <Filter>Header Files\server</Filter>
+    <ClInclude Include="..\..\..\src\third_party\FreeRDP\client\cliprdr.h">
+      <Filter>third_party\FreeRDP\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\umutech\ClipboardSync\res\resource.h">
+      <Filter>ClipboardSync\res</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\umutech\ClipboardSync\src\io_runner.h">
+      <Filter>ClipboardSync\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\umutech\ClipboardSync\src\client\root_certificates.h">
+      <Filter>ClipboardSync\src\client</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\umutech\ClipboardSync\src\utils.h">
+      <Filter>ClipboardSync\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\umutech\ClipboardSync\src\clipboard_redirector.h">
+      <Filter>ClipboardSync\src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="pb\regame_desk.proto">
-      <Filter>Header Files\pb</Filter>
+    <None Include="..\..\..\src\umutech\ClipboardSync\pb\clipboard.proto">
+      <Filter>ClipboardSync\pb</Filter>
     </None>
-    <None Include="pb\clipboard.proto">
-      <Filter>Header Files\pb</Filter>
+    <None Include="..\..\..\src\umutech\ClipboardSync\pb\regame_desk.proto">
+      <Filter>ClipboardSync\pb</Filter>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\..\src\umutech\ClipboardSync\res\ClipboardSync.rc">
+      <Filter>ClipboardSync\res</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

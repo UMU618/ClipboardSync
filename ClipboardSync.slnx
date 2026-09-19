@@ -1,0 +1,11 @@
+<Solution>
+  <Configurations>
+    <BuildType Name="Debug" />
+    <BuildType Name="MTRelease" />
+    <BuildType Name="Release" />
+    <Platform Name="ARM64" />
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="ClipboardSync/ClipboardSync.vcxproj" Id="40cc2e2d-65e9-487b-91b3-8f5c6d0dd0ff" />
+</Solution>
